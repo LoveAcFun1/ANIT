@@ -4,8 +4,8 @@ Codes for our paper *Adversarial Noisy Instruction Tuning for Enhancing NLU in L
 <!-- *Visual instruction tuning towards large language and vision models with GPT-4 level capabilities.*-->
 
 ## Overview
-<p align=--center-->
-    <a> <img src=--imgs/over_view.png-- width=--100%--> </a>
+<p align="center">
+    <a> <img src=imgs/over_view.png width="100%"> </a>
 </p>
 Overview of Adversarial Noisy Instruction Tuning (ANIT). The example in this figure comes from the Conll03 dataset. The raw instruction and corresponding noisy instruction and their semantic distortion quantification are in the left section. The process of how the model performs adversarial training based on these instructions during the training process is in the right section.
 
