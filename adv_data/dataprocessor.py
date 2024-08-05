@@ -47,62 +47,7 @@ class DataProcessor:
         self.data_path = data_path
         self.load_data()
 
-    @property
-    def datasetpath_dict(self) -> dict:
-        return {
-            "conll03": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/NER/CoNLL2003/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/NER/CoNLL2003/test.json",
-            },
-            "ontonotes": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/NER/Ontonotes/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/NER/Ontonotes/test.json",
-            },
-            "bc4chemd": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/NER/bc4chemd/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/NER/bc4chemd/test.json",
-            },
-            "scierc": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/RE/SciERC/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/RE/SciERC/test.json",
-            },
-            "ade": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/RE/ADE_corpus/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/RE/ADE_corpus/test.json",
-            },
-            "nyt": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/RE/New-York-Times-RE/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/RE/New-York-Times-RE/test.json",
-            },
-            "14lap": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/ABSA/14lap/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/ABSA/14lap/test.json",
-            },
-            "14res": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/ABSA/14res/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/ABSA/14res/test.json",
-            },
-            "16res": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/ABSA/16res/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/ABSA/16res/test.json",
-            },
-            "14lap+14res+16res": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/ABSA/14lapres_16res/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/ABSA/14lapres_16res/train.json",
-            },
-            "agnews": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/tex_class/ag_news/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/tex_class/ag_news/test.json",
-            },
-            "sst2": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/tex_class/sst2/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/tex_class/sst2/dev.json",
-            },
-            "sst5": {
-                "train": "/cto_labs/baishengyuan/noise_llm_data/tex_class/sst5/train.json",
-                "test": "/cto_labs/baishengyuan/noise_llm_data/tex_class/sst5/test.json",
-            },
-        }
+    
 
     def ner_question(self) -> str:
         return "Give a word that describes the category of the entity word."
