@@ -48,10 +48,19 @@ We conducted experiments on eight datasets of four tasks, all of which are publi
 
 ## Noise Instruction build
 
-To build the noise instructions, run the following command to get the corresponding noise instructions.
+To build the noise instructions, run the following command to get the corresponding noise instructions. The following takes the ABSA task as an example, where INPUT_FILE and OUTPUT_FILE represent the input and output files, YOUR INSTRUCTION represents the instruction data, NOISE_TYPE represents the noise type, and NOISE_RATE represents the noise addition ratio.
 
 ```Shell
+from adv_data.dataprocessor import DataProcessor
 
+p = DataProcessor(
+        ${INPUT_FILE},
+        ${OUTPUT_FILE},
+    )
+    instruction_list = [
+        ${YOUR INSTRUCTION}
+    ]
+    p.lapres14_res16(instruction_list, ${NOISE_TYPE}, ${NOISE_RATE})
 ```
 
 ## Train
